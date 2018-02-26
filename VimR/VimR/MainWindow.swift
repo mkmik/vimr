@@ -390,7 +390,7 @@ class MainWindow: NSObject,
         switch openMode {
 
         case .default:
-          self.neoVimView.open(urls: [url])
+          self.neoVimView.openInCurrentTab(url: url)
 
         case .currentTab:
           self.neoVimView.openInCurrentTab(url: url)
